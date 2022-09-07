@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row offset-2 my-4 p-3">
+        <div class="col col-md-5 col-lg-9 p-3">
+          <h1 class="mb-3 text-muted">Calculator</h1>
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default"
+              >Value 1</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </div>
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default"
+              >Value 2</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </div>
+          <div class="row mt-3 p-2">
+            <span
+              class="btn btn-primary w-50"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+              >Operation</span
+            >
+            <select
+              class="form-select w-50"
+              aria-label="Default select example"
+            >
+              <option value="Addition">Addition</option>
+              <option value="Subtraction">Subtraction</option>
+              <option value="Multiplication">Multiplication</option>
+              <option value="Division">Division</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <h1 class="mb-3 text-muted">Change Currency</h1>
+      <div class="col col-md-6 col-lg-10">
+        <div class="input-group mb-3">
+          <span class="input-group-text text-danger fs-3" id="basic-addon1"
+            >Kyats (Myanmar)</span
+          >
+          <input
+            type="text"
+            class="form-control f"
+            placeholder="...myanmar kyat"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text text-danger fs-3" id="basic-addon1">
+            Dollar (American)
+          </span>
+          <input
+            type="text"
+            class="form-control f"
+            placeholder="US Dollar"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text text-danger fs-3" id="basic-addon1"
+            >Yuan (China)</span
+          >
+          <input
+            type="text"
+            class="form-control f"
+            placeholder="...yuan"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text fs-3 text-danger" id="basic-addon1"
+            >Yen (Japan)</span
+          >
+          <input
+            type="text"
+            class="form-control f"
+            placeholder="...yen"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Box -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger">
+            <h5 class="modal-title text-white" id="staticBackdropLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body fs-5"></div>
+          <div class="modal-footer d-flex justify-content-between">
+            <span class="fs-3 text-danger"></span>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</html>
